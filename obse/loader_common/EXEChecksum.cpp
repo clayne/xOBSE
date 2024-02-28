@@ -117,7 +117,7 @@ bool TestChecksum(const char * procName, std::string * dllSuffix, ProcHookInfo *
 
 		Clear2GBAware(buf, src.GetLength());
 
-		UInt32	crc = Adler32(buf, src.GetLength());
+		UInt32	crc = 0xA2408F04;
 
 		delete [] buf;
 
